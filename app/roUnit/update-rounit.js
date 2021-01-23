@@ -16,7 +16,6 @@ $(document).ready(function () {
             let unit = data.unit;
             let createdOn = data.created_on;
             let modifiedOn = data.modified_on;
-            let category_name = data.category_name;
 
             // update roUnit html will be here
 
@@ -33,7 +32,7 @@ $(document).ready(function () {
                     
                             <!-- Id field -->
                             <tr>
-                                <td>Id</td>
+                                <td>Id</td> <!-- don't know why but not read in submit as form_data -->
                                 <td><input value=\"` + id + `\" type='number' name='ROId' class='form-control' disabled /></td>
                             </tr>
                     
@@ -41,7 +40,20 @@ $(document).ready(function () {
                             <tr>
                                 <td>Unit</td>
                                 <td><input value=\"` + unit + `\" type='text' name='unit' class='form-control' required /></td>
-                            </tr>                    
+                            </tr>    
+                            <tr>
+                                <!-- hidden 'roUnit id' to identify which record to updated and to be read in form_data-->
+                    <!-- don't remove this section-->
+                                <td><input value=\"` + id + `\" name='ROId' type='hidden' /></td> 
+                    
+                                <!-- button to submit form -->
+                                <td>
+                                    <button type='submit' class='btn btn-info'>
+                                        <span class='glyphicon glyphicon-edit'></span> Update Product
+                                    </button>
+                                </td>
+                    
+                            </tr>            
                         </table>
                     </form>`;
 

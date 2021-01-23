@@ -9,7 +9,7 @@ class ROUnit{
     public $ROId;
     public $unit;
     public $created_on;
-    public $modifiedon;
+    public $modified_on;
     
   
     // constructor with $db as database connection
@@ -102,7 +102,7 @@ class ROUnit{
         $this->ROId = $row['ROId'];
         $this->unit = $row['unit'];
         $this->created_on = $row['created_on'];
-        $this->modified_on = $row['modified_on'];
+        $this->modified = $row['modified_on'];
     }
 
 
@@ -113,30 +113,23 @@ class ROUnit{
         $query = "UPDATE
                     " . $this->table_name . "
                 SET
-                    name = :name,
-                    price = :price,
-                    description = :description,
-                    category_id = :category_id
+                    unit = :unit,
+                    modified_on = :modified_on
                 WHERE
-                    id = :id";
+                    `". $this->table_name . "`. `ROId` = :ROId";
       
         // prepare query statement
         $stmt = $this->conn->prepare($query);
       
         // sanitize
-        $this->name=htmlspecialchars(strip_tags($this->name));
-        $this->price=htmlspecialchars(strip_tags($this->price));
-        $this->description=htmlspecialchars(strip_tags($this->description));
-        $this->category_id=htmlspecialchars(strip_tags($this->category_id));
-        $this->id=htmlspecialchars(strip_tags($this->id));
+        $this->name=htmlspecialchars(strip_tags($this->unit));
       
         // bind new values
-        $stmt->bindParam(':name', $this->name);
-        $stmt->bindParam(':price', $this->price);
-        $stmt->bindParam(':description', $this->description);
-        $stmt->bindParam(':category_id', $this->category_id);
-        $stmt->bindParam(':id', $this->id);
-      
+        $stmt->bindParam(':unit', $this->unit);
+        $stmt->bindParam(':modified_on', $this->modified_on);
+        $stmt->bindParam(':ROId', $this->ROId);
+
+        // print_r($stmt);
         // execute the query
         if($stmt->execute()){
             return true;
