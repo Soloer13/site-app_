@@ -1,0 +1,507 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"con",
+				"console"
+			],
+			[
+				"ch",
+				"checked"
+			],
+			[
+				"che",
+				"checkboxro1"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"h",
+				"head\tTag"
+			],
+			[
+				"da",
+				"date1"
+			],
+			[
+				"inser",
+				"insertId"
+			],
+			[
+				"pri",
+				"print_r"
+			],
+			[
+				"u",
+				"Unit"
+			],
+			[
+				"water",
+				"waterAnalysisId"
+			],
+			[
+				"wa",
+				"waterAnalysisId"
+			],
+			[
+				"w",
+				"width\tproperty"
+			],
+			[
+				"gi",
+				"grid-template-columns\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"RO_",
+				"RO_id"
+			],
+			[
+				"table",
+				"tableBody"
+			],
+			[
+				"RO",
+				"RO_id"
+			],
+			[
+				"ta",
+				"tableBody"
+			],
+			[
+				"nu",
+				"numberOfColumns"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"R",
+				"RO_id"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"re",
+				"result"
+			],
+			[
+				"req",
+				"require"
+			],
+			[
+				"RO1i",
+				"RO1in"
+			],
+			[
+				"grid-tem",
+				"grid-template-columns\tproperty"
+			],
+			[
+				"margin",
+				"margin-bottom\tproperty"
+			],
+			[
+				"wi",
+				"border-width\tproperty"
+			],
+			[
+				"width",
+				"max-width\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "$(document).ready(function() {\n    //set initial state.\n    $('#checkboxro1').val($(this).is(':checked'));\n    \n    $('#checkboxro1').change(function() {\n        //$('#textbox1').val($(this).is(':checked'));\n        console.log(\"checkboxro1 is \", $(this).is(':checked'));\n        // alert(\"attention\");\n    });\n\n    $('#checkboxro1').click(function() {\n        if($(this).is(':checked')){\n            $('#ro1').show();\n            console.log(\"show  ro1\");\n        }\n        else{\n            $('#ro1').show();\n            console.log(\"hide ro1\");\n        }\n    });\n\n$('#checkboxro2').val($(this).is(':checked'));\n    \n    $('#checkboxro2').change(function() {\n        //$('#textbox1').val($(this).is(':checked'));\n        console.log(\"checkboxro2 is \", $(this).is(':checked'));\n        // alert(\"attention\");\n    });\n\n    $('#checkboxro2').click(function() {\n        if($(this).is(':checked')){\n            $('#ro2').show();\n            console.log(\"show  ro2\");\n        }\n        else{\n            $('#ro2').hide();   \n            console.log(\"hide ro2\");\n        }\n    });\n\n\n    $('#checkboxro3').val($(this).is(':checked'));\n    \n    $('#checkboxro3').change(function() {\n        //$('#textbox1').val($(this).is(':checked'));\n        console.log(\"checkboxro3 is \", $(this).is(':checked'));\n        // alert(\"attention\");\n    });\n\n    $('#checkboxro3').click(function() {\n        if($(this).is(':checked')){\n            $('#ro3').show();\n            console.log(\"show  ro3\");\n        }\n        else{\n            $('#ro3').hide();   \n            console.log(\"hide ro3\");\n        }\n    });\n\n    $('#checkboxro4').val($(this).is(':checked'));\n    \n    $('#checkboxro4').change(function() {\n        //$('#textbox1').val($(this).is(':checked'));\n        console.log(\"checkboxro4 is \", $(this).is(':checked'));\n        // alert(\"attention\");\n    });\n\n    $('#checkboxro4').click(function() {\n        if($(this).is(':checked')){\n            $('#ro4').show();\n            console.log(\"show  ro4\");\n        }\n        else{\n            $('#ro4').hide();   \n            console.log(\"hide ro4\");\n        }\n    });\n\n    $('#checkboxro5').val($(this).is(':checked'));\n    \n    $('#checkboxro5').change(function() {\n        //$('#textbox1').val($(this).is(':checked'));\n        console.log(\"checkboxro5 is \", $(this).is(':checked'));\n        // alert(\"attention\");\n    });\n\n    $('#checkboxro5').click(function() {\n        if($(this).is(':checked')){\n            $('#ro5').show();\n            console.log(\"show  ro5\");\n        }\n        else{\n            $('#ro5').hide();   \n            console.log(\"hide ro5\");\n        }\n    });\n\n    $('#checkboxro6').val($(this).is(':checked'));\n    \n    $('#checkboxro6').change(function() {\n        //$('#textbox1').val($(this).is(':checked'));\n        console.log(\"checkboxro6 is \", $(this).is(':checked'));\n        // alert(\"attention\");\n    });\n\n    $('#checkboxro6').click(function() {\n        if($(this).is(':checked')){\n            $('#ro6').show();\n            console.log(\"show  ro6\");\n        }\n        else{\n            $('#ro6').hide();   \n            console.log(\"hide ro6\");\n        }\n    });\n\n    $('#checkboxro7').val($(this).is(':checked'));\n    \n    $('#checkboxro7').change(function() {\n        //$('#textbox1').val($(this).is(':checked'));\n        console.log(\"checkboxro7 is \", $(this).is(':checked'));\n        // alert(\"attention\");\n    });\n\n    $('#checkboxro7').click(function() {\n        if($(this).is(':checked')){\n            $('#ro7').show();\n            console.log(\"show  ro7\");\n        }\n        else{\n            $('#ro7').hide();   \n            console.log(\"hide ro7\");\n        }\n    });\n\n    $('#checkboxro8').val($(this).is(':checked'));\n    \n    $('#checkboxro8').change(function() {\n        //$('#textbox1').val($(this).is(':checked'));\n        console.log(\"checkboxro8 is \", $(this).is(':checked'));\n        // alert(\"attention\");\n    });\n\n    $('#checkboxro8').click(function() {\n        if($(this).is(':checked')){\n            $('#ro8').show();\n            console.log(\"show  ro8\");\n        }\n        else{\n            $('#ro8').hide();   \n            console.log(\"hide ro8\");\n        }\n    });\n\n    $('#checkboxro9').val($(this).is(':checked'));\n    \n    $('#checkboxro9').change(function() {\n        //$('#textbox1').val($(this).is(':checked'));\n        console.log(\"checkboxro9 is \", $(this).is(':checked'));\n        // alert(\"attention\");\n    });\n\n    $('#checkboxro9').click(function() {\n        if($(this).is(':checked')){\n            $('#ro9').show();\n            console.log(\"show  ro9\");\n        }\n        else{\n            $('#ro9').hide();   \n            console.log(\"hide ro9\");\n        }\n    });\n\n    $('#checkboxro10').val($(this).is(':checked'));\n    \n    $('#checkboxro10').change(function() {\n        //$('#textbox1').val($(this).is(':checked'));\n        console.log(\"checkboxro10 is \", $(this).is(':checked'));\n        // alert(\"attention\");\n    });\n\n    $('#checkboxro10').click(function() {\n        if($(this).is(':checked')){\n            $('#ro10').show();\n            console.log(\"show  ro10\");\n        }\n        else{\n            $('#ro10').hide();  \n            console.log(\"hide ro10\");\n        }\n    });\n\n    $('#checkboxrentalro').val($(this).is(':checked'));\n    \n    $('#checkboxrentalro').change(function() {\n        //$('#textbox1').val($(this).is(':checked'));\n        console.log(\"checkboxrentalro is \", $(this).is(':checked'));\n        // alert(\"attention\");\n    });\n\n    $('#checkboxrentalro').click(function() {\n        if($(this).is(':checked')){\n            $('#rentalro').show();\n            console.log(\"show  rentalro\");\n        }\n        else{\n            $('#rentalro').hide();  \n            console.log(\"hide rentalro\");\n        }\n    });\n\n    $('#checkboxnewjabal').val($(this).is(':checked'));\n    \n    $('#checkboxnewjabal').change(function() {\n        //$('#textbox1').val($(this).is(':checked'));\n        console.log(\"checkboxnewjabal is \", $(this).is(':checked'));\n        // alert(\"attention\");\n    });\n\n    $('#checkboxnewjabal').click(function() {\n        if($(this).is(':checked')){\n            $('#newjabal').show();\n            console.log(\"show  newjabal\");\n        }\n        else{\n            $('#newjabal').hide();  \n            console.log(\"hide newjabal\");\n        }\n    });\n\n    $('#checkboxoldjabal').val($(this).is(':checked'));\n    \n    $('#checkboxoldjabal').change(function() {\n        //$('#textbox1').val($(this).is(':checked'));\n        console.log(\"checkboxoldjabal is \", $(this).is(':checked'));\n        // alert(\"attention\");\n    });\n\n    $('#checkboxoldjabal').click(function() {\n        if($(this).is(':checked')){\n            $('#oldjabal').show();\n            console.log(\"show  oldjabal\");\n        }\n        else{\n            $('#oldjabal').hide();  \n            console.log(\"hide oldjabal\");\n        }\n    });\n\n\n    $('#checkboxintakewater').val($(this).is(':checked'));\n    \n    $('#checkboxintakewater').change(function() {\n        //$('#textbox1').val($(this).is(':checked'));\n        console.log(\"checkboxintakewater is \", $(this).is(':checked'));\n        // alert(\"attention\");\n    });\n\n    $('#checkboxintakewater').click(function() {\n        if($(this).is(':checked')){\n            $('#intakewater').show();\n            console.log(\"show  intakewater\");\n        }\n        else{\n            $('#intakewater').hide();   \n            console.log(\"hide intakewater\");\n        }\n    });\n\n\n    $('#checkboxdeselectall').val($(this).is(':checked'));\n    \n    $('#checkboxdeselectall').change(function() {\n        //$('#textbox1').val($(this).is(':checked'));\n        console.log(\"checkboxdeselectall is \", $(this).is(':checked'));\n        // alert(\"attention\");\n    });\n\n    $('#checkboxdeselectall').click(function() {\n        if($(this).is(':checked')){\n            \n            $('#deselectall').show();\n            console.log(\"show  deselectall\");\n        }\n        else{\n            $('#deselectall').hide();   \n            console.log(\"hide deselectall\");\n        }\n    });\n\n\n});\n",
+			"settings":
+			{
+				"buffer_size": 8032,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "$('#ro1').show();\n$('#ro2').show();\n$('#ro3').show();\n$('#ro4').show();\n$('#ro5').show();\n$('#ro6').show();\n$('#ro7').show();\n$('#ro8').show();\n$('#ro9').show();\n$('#ro10').show();\n$('#rentalro').show();\n$('#newjabal').show();\n$('#oldjabal').show();\n$('#intakewater').show();\n\n\n$('#ro1').hide();\n$('#ro2').hide();   \n$('#ro3').hide();   \n$('#ro4').hide();   \n$('#ro5').hide();   \n$('#ro6').hide();   \n$('#ro7').hide();   \n$('#ro8').hide();   \n$('#ro9').hide();   \n$('#ro10').hide();  \n$('#rentalro').hide();  \n$('#newjabal').hide();  \n$('#oldjabal').hide();  \n$('#intakewater').hide();   \n",
+			"settings":
+			{
+				"buffer_size": 589,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\t$('#checkboxro1').prop('checked', false);\n\t$('#checkboxro2').prop('checked', false);\n\t$('#checkboxro3').prop('checked', false);\n\t$('#checkboxro4').prop('checked', false);\n\t$('#checkboxro5').prop('checked', false);\n\t$('#checkboxro6').prop('checked', false);\n\t$('#checkboxro7').prop('checked', false);\n\t$('#checkboxro8').prop('checked', false);\n\t$('#checkboxro9').prop('checked', false);\n\t$('#checkboxro10').prop('checked', false);\n\t$('#checkboxrentalro').prop('checked', false);\n\t$('#checkboxnewjabal').prop('checked', false);\n\t$('#checkboxoldjabal').prop('checked', false);\n\t$('#checkboxintakewater').prop('checked', false);",
+			"settings":
+			{
+				"buffer_size": 625,
+				"line_ending": "Windows",
+				"name": "$('#checkboxro1').prop('checked', false);"
+			}
+		},
+		{
+			"contents": "$('#checkboxro1').prop('checked', true);\n$('#checkboxro2').prop('checked', true);\n$('#checkboxro3').prop('checked', true);\n$('#checkboxro4').prop('checked', true);\n$('#checkboxro5').prop('checked', true);\n$('#checkboxro6').prop('checked', true);\n$('#checkboxro7').prop('checked', true);\n$('#checkboxro8').prop('checked', true);\n$('#checkboxro9').prop('checked', true);\n$('#checkboxro10').prop('checked', true);\n$('#checkboxrentalro').prop('checked', true);\n$('#checkboxnewjabal').prop('checked', true);\n$('#checkboxoldjabal').prop('checked', true);\n$('#checkboxintakewater').prop('checked', true);",
+			"settings":
+			{
+				"buffer_size": 597,
+				"line_ending": "Windows",
+				"name": "$('#checkboxro1').prop('checked', true);"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/masirah/site-app/css/style.css",
+		"/C/xampp/htdocs/masirah/site-app/js/testing.js",
+		"/C/xampp/htdocs/masirah/jquery.html",
+		"/C/xampp/htdocs/masirah/styles.css",
+		"/C/xampp/htdocs/csslayouts/position.html",
+		"/C/xampp/htdocs/csslayouts/floating.html",
+		"/C/xampp/htdocs/csslayouts/styles.css",
+		"/C/xampp/htdocs/csslayouts/flex.html",
+		"/C/xampp/htdocs/masirah/site-app/waterAnalysis.html",
+		"/C/xampp/htdocs/phpImport/import-csv/DataSource.php",
+		"/C/xampp/htdocs/masirah/flown_app/api/add_issue.php",
+		"/C/xampp/htdocs/phpImport/importform.html",
+		"/C/xampp/htdocs/phpImport/import-csv/index.php",
+		"/C/xampp/htdocs/phpImport/__MACOSX/import-csv/._index.php",
+		"/C/xampp/htdocs/masirah/site-app/index.html",
+		"/C/xampp/htdocs/masirah/site-app/css/nav-bar.css",
+		"/C/xampp/htdocs/masirah/site-app/css/styles.css",
+		"/C/xampp/htdocs/masirah/waterAnalysis.html",
+		"/C/xampp/htdocs/masirah/ajax_info.txt",
+		"/C/xampp/htdocs/masirah/flown_app/api/get_all_sites.php",
+		"/C/xampp/htdocs/masirah/flown_app/get_all_roUnits.php",
+		"/C/Users/moham/Desktop/New folder (2)/styles.css",
+		"/C/xampp/htdocs/gettingstartCSS/styles.css",
+		"/C/xampp/htdocs/img/samplesite.html",
+		"/C/xampp/htdocs/masirah/database.php",
+		"/C/xampp/htdocs/dynamicTable/app.js",
+		"/C/xampp/htdocs/gettingstartCSS/index.html",
+		"/C/xampp/htdocs/masirah/flown_app/config/database.php",
+		"/C/xampp/htdocs/masirah/simple-sync.html",
+		"/C/xampp/htdocs/masirah/ajaxHelloWorld.html",
+		"/C/xampp/htdocs/masirah/flown_app.zip",
+		"/C/xampp/htdocs/masirah/testconnection.php",
+		"/C/xampp/htdocs/masirah/insertWaterAnalysis.php",
+		"/C/xampp/htdocs/masirah/numberGuessingGame.html",
+		"/C/xampp/htdocs/masirah/oojs.html",
+		"/C/xampp/htdocs/masirah/flown_app/api/get_all_issues.php",
+		"/C/xampp/htdocs/masirah/flown_app/api/projects.php",
+		"/C/Users/moham/Desktop/New folder (2)/intialform1.html",
+		"/C/Users/moham/Desktop/New folder (2)/main.css",
+		"/C/xampp/htdocs/gettingstartCSS/summarizing tips.txt"
+	],
+	"find":
+	{
+		"height": 42.4
+	},
+	"find_in_files":
+	{
+		"height": 111.2,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"attr",
+			"false",
+			"true",
+			"rental",
+			"false",
+			"intakewater",
+			"oldjabal",
+			"NewJabal",
+			"rentalro",
+			"ro10",
+			"ro9",
+			"ro8",
+			"ro7",
+			"ro6",
+			"ro5",
+			"ro4",
+			"ro3",
+			"ro2",
+			"ro1"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8032,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5458,
+								5458
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 589,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								585,
+								278
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 625,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1,
+								625
+							]
+						],
+						"settings":
+						{
+							"auto_name": "$('#checkboxro1').prop('checked', false);",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 597,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								597
+							]
+						],
+						"settings":
+						{
+							"auto_name": "$('#checkboxro1').prop('checked', true);",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 42.4
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "testing.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 215.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
