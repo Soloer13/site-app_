@@ -37,12 +37,12 @@ class ROUnit{
     // create roUnit
     function create(){
         // query to insert record
-        // $query = "INSERT INTO
-        //             " . $this->table_name . "
-        //         SET
-        //             unit=:unit";
-      
-        $query = 'INSERT INTO '. $this->table_name .' (`unit`, `created_on`, `modified_on`) VALUES (?, ?, ?)';
+        $query = "INSERT INTO
+                    " . $this->table_name . "
+                SET
+                    unit=:unit, created_on=:created_on, modified_on=:modified_on";
+
+        // $query = 'INSERT INTO '. $this->table_name .' (`unit`, `created_on`, `modified_on`) VALUES (?, ?, ?)';
 
 
         // prepare query
@@ -51,21 +51,32 @@ class ROUnit{
         // sanitize
         $this->unit=htmlspecialchars(strip_tags($this->unit));
       
+        $this->created_on = date('Y-m-d H:i:s');
+        // echo($this->created_on);
+        $this->modified_on = ''; //can't be null
+
+        // $data = [
+        //     "unit"=>$this->unit,
+        //     "created_on"=>$this->created_on,
+        //     "modified_on"=>$this->modified_on
+        // ];
+
+        // print_r($data);
+
         // bind values
         $stmt->bindParam(":unit", $this->unit);
-        $this->created_on = date('m/d/Y h:i:s', time());
+        $stmt->bindParam(":created_on", $this->created_on);
+        $stmt->bindParam(":modified_on", $this->modified_on);
 
-        $this->modified_on = null;
-
-        echo($query);
+        // echo($query);
         // echo($stmt);
-        print_r($stmt);
+        // print_r($stmt);
 
         // execute query
         if($stmt->execute()){
             return true;
         }
-        print_r($stmt->execute());
+        // print_r($stmt->execute());
         return false; 
     }
 

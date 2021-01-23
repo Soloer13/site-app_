@@ -23,7 +23,7 @@ $(document).ready(function () {
                 <!-- name field -->
                 <tr>
                     <td>Unit Name</td>
-                    <td><input type='text' name='name' class='form-control' required /></td>
+                    <td><input type='text' name='unit' class='form-control' required /></td>
                 </tr>
     
                 <!-- button to submit form -->
@@ -57,7 +57,8 @@ $(document).on('submit', '#create-roUnit-form', function () {
     // form data will be here
     // get form data
     var form_data = JSON.stringify($(this).serializeObject());
-
+    console.log(form_data);
+    
     // submit form data to api
     $.ajax({
         url: "http://localhost/masirah/site-app/api/roUnit/create.php",

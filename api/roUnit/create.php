@@ -20,13 +20,13 @@ $roUnit = new roUnit($db);
 // get posted data
 $data = json_decode(file_get_contents("php://input"));
 
-echo("create php is here");
+// echo("create php is here");
 
 // make sure data is not empty
 if( !empty($data->unit) ){
   
     // set roUnit property values
-    echo($data->unit);
+    // echo($data->unit);
     $roUnit->unit = $data->unit;
 
     // create the roUnit
