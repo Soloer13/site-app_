@@ -102,7 +102,7 @@ class ROUnit{
         $this->ROId = $row['ROId'];
         $this->unit = $row['unit'];
         $this->created_on = $row['created_on'];
-        $this->modified = $row['modified_on'];
+        $this->modified_on = $row['modified_on'];
     }
 
 
