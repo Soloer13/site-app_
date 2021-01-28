@@ -14,7 +14,7 @@ $(document).ready(function () {
 function showProducts() {
     // get list of products from the API
     $.getJSON("http://localhost/masirah/site-app/api/product/read.php", function (data) {
-        // console.log($data);
+        console.log($data);
         // html for listing products
         var read_products_html = `
         <!-- when clicked, it will load the create product form -->

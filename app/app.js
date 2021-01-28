@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     // app html
     var app_html = `
-        <div class='container'>
+        <div class='container-fluid'>
 
             <div class='page-header'>
                 <h1 id='page-title'>Read Products</h1>
