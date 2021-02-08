@@ -28,10 +28,10 @@ function showwaterAnalysis() {
         
             <!-- creating our table heading -->
             <tr>
-                <th class='w-5-pct text-align-center'>Id</th>
-                <th class='w-10-pct text-align-center'>Date</th>
-                <th class='w-8-pct text-align-center'>Shift</th>
-                <th class='w-8-pct text-align-center'>Unit Name</th>
+                <!-- <th class='w-5-pct text-align-center'>Id</th> -->
+                <th class='w-0-pct text-align-center'>Date</th>
+                <th class='w-0-pct text-align-center'>Shift</th>
+                <th class='w-0-pct text-align-center'>Unit Name</th>
                 <th class='w-0-pct text-align-center'>Cond</th>
                 <th class='w-0-pct text-align-center'>Temp</th>
                 <th class='w-0-pct text-align-center'>Ph</th>
@@ -50,7 +50,7 @@ function showwaterAnalysis() {
             read_waterAnalysiss_html += `
             <tr>
 
-                <td class='text-align-center'>` + val.Id + `</td>
+                <!-- <td class='text-align-center'>` + val.Id + `</td> --> 
                 <td class='text-align-center'>` + val.date + `</td>
                 <td class='text-align-center'>` + val.shift + `</td>
                 <td class='text-align-center'>` + val.unit + `</td>
@@ -91,7 +91,7 @@ function showwaterAnalysis() {
         // inject to 'page-content' of our app
         $("#page-content").html(read_waterAnalysiss_html);
 
-        // console.log("injection is done");
+        console.log("injection is done");
         // chage page title
         changePageTitle("Read the existing Water-Analysis");
     });
